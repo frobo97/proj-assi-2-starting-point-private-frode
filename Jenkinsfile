@@ -39,6 +39,13 @@ pipeline {
                 echo 'packaged'
             }
         }
+        stage('deploy') {
+            steps {
+                echo 'deploying...'
+                sh 'cp backend/target/ROOT.war /artifacts'
+                echo 'sent to server'
+            }
+        }
     }
 
     post {
