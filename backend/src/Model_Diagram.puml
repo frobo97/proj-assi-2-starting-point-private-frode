@@ -1,0 +1,35 @@
+@startuml
+class CartItem {
+    + int productId;
+    + String title;
+    + String color;
+    + String size;
+    + String previewImage;
+    + int quantity;
+    }
+
+    class ColorVariant {
+
+        + String colorName;
+        + List<String> images;
+        + List<SizeContainer> sizes;
+        }
+
+        class Product implements Serializable {
+            + int id;
+            + String category;
+            + String title;
+            + String description;
+            + String previewImage;
+            + ArrayList<ColorVariant> colorVariants;
+        }
+
+        class SizeContainer {
+            + String size;
+            + int stock;
+        }
+
+CartItem -- Product
+Product --ColorVariant
+ColorVariant -- SizeContainer
+@enduml

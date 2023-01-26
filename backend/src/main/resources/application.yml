@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    name: saltmerch
+    url: jdbc:postgresql://database:5432/saltmerch
+    username: jensenyh
+    password: password
