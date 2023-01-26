@@ -11,7 +11,7 @@ pipeline {
         stage('clean and checkout') {
             steps {
                 sh 'mvn clean -f ./backend/'
-                echo 'downloading github project...'
+                echo 'downloading github project....'
                 git credentialsId: 'FrodeToken', url: 'https://github.com/frobo97/proj-assi-2-starting-point-private-frode.git', branch: 'master'
             }
         }
