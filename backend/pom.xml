@@ -16,7 +16,6 @@
     <properties>
         <java.version>17</java.version>
     </properties>
-    <!--är detta rätt? (War-file)-->
     <packaging>war</packaging>
 
     <dependencies>
@@ -25,18 +24,11 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-
-
-        <!--är detta rätt? (tomcat)-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
         </dependency>
-
-
-
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -64,11 +56,8 @@
     </dependencies>
 
     <build>
-        <!--är detta rätt? (ROOT)-->
         <finalName>ROOT</finalName>
         <plugins>
-            <!--är detta rätt? plug in -->
-            <!--Plug in = Unresolved plugin: varför? -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>

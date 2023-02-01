@@ -49,5 +49,4 @@ public class ProductService {
     public void deleteVariantFromDatabase() {
         // this is wrong in the API_SPEC do last
     }
-
 }
